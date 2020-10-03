@@ -8,6 +8,7 @@ primero = input("Ingrese el primer número: ")
 
 # Otra forma de realizar la misma operación pero utilizando try y except de esta forma:
 
+
 try: 
     primero = int(primero)
 except:
