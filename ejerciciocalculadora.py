@@ -20,7 +20,19 @@ try:
 except:
     segundo = "chanchito feliz"
 
-if primero == "chanchito feliz" or segundo == "chanchito feliz":
-    print('Ingresaste mal un dato, intenta de nuevo sólo con numeros')
-else: 
-    print(primero + segundo)
+if segundo == "chanchito feliz":
+    print('El dato ingresado no es un entero')
+    exit()
+
+simbolo = input("Ingrese operación: ")
+
+if simbolo == '+':
+    print('Suma:', primero + segundo)
+elif simbolo == '-':
+    print('Resta:', primero - segundo)
+elif simbolo == '*':
+    print('Multiplicación:', primero * segundo)
+elif simbolo == '/':
+    print('División:', primero / segundo)
+else:
+    print('El simbolo ingresado no es válido')
