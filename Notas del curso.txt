@@ -1,0 +1,29 @@
+Para leer un archivo definimos la variable:
+
+c = open('chanchito.txt') (en el caso que exista el archivo chanchito.txt)
+
+y para leerlo declaramos
+c.read('chanchito.txt')
+
+Para eliminar archivos o carpetas utilizamos el modulo os, de esta forma:
+
+import os
+
+Seguido, indicamos cual es el archivo que queremos eliminar:
+
+os.remove('chanchito.txt')
+
+Si el comando no encuentra al archivo, podemos utilizar una validación (antes de este codigo claro, porque tiene que validar
+antes)
+
+if os.path.exists('chanchito.txt'):
+	os.remove('chanchito.txt')
+else:
+	print('El archivo no existe!')
+
+Si fuese una carpeta:
+
+os.rmdir('micarpeta')
+
+
+
